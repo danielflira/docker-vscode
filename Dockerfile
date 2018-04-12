@@ -17,4 +17,3 @@ RUN curl -qL https://go.microsoft.com/fwlink/?LinkID=760868 > vscode.deb \
     && dpkg -i vscode.deb \
     && rm -rf vscode.deb
 
-CMD code $PWD && bash

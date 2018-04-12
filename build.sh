@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t vscode:stable .
+docker build -t danielflira/vscode:stable -t vscode:stable .
