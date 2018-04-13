@@ -1,4 +1,4 @@
-FROM debian:stable
+FROM debian:testing
 
 RUN apt-get update && apt-get install -y \
     curl \
@@ -17,3 +17,7 @@ RUN curl -qL https://go.microsoft.com/fwlink/?LinkID=760868 > vscode.deb \
     && dpkg -i vscode.deb \
     && rm -rf vscode.deb
 
+ADD *.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/*.sh
+
+CMD install.sh
