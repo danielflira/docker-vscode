@@ -7,7 +7,7 @@ A docker container based on debian with git and vscode.
 Create your project Dockerfile from it, and add your dependencies, for example:
 
 ```
-FROM danielflira/vscode:testing
+FROM danielflira/vscode:stable
 
 RUN apt-get update && apt-get install -y \
     curl
@@ -20,8 +20,8 @@ RUN curl -sL https://get.docker.com | bash
 Just execute dev.sh with, so you can call code to change project
 
 ```
-$ docker run --rm -i danielflira/vscode:testing | tee dev.sh
-$ bash dev.sh danielflira/vscode:testin
+$ docker run --rm -i danielflira/vscode:stable | tee dev.sh
+$ bash dev.sh danielflira/vscode:stable
 ```
 
 ## How vscode versions works
